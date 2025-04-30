@@ -1,12 +1,13 @@
-// password-protection.js
-const password = 'yourpassword'; // Replace 'yourpassword' with your desired password
+// auth.js
+const username = 'demo';
+const password = 'demo';
 
-const enteredPassword = prompt("Enter the password:");
+const enteredUsername = prompt("Enter username:");
+const enteredPassword = prompt("Enter password:");
 
-if (enteredPassword !== password) {
-    document.body.innerHTML = "<h1>Access Denied</h1>";
-    document.body.style.textAlign = "center";
-} else {
-    // Continue loading the page if password is correct
-    // Optionally, you could hide this script tag or do nothing here
+if (enteredUsername !== username || enteredPassword !== password) {
+  document.body.innerHTML = "<h1>Access Denied</h1><p>Invalid credentials.</p>";
+  document.body.style.textAlign = "center";
+  document.body.style.marginTop = "50px";
 }
+
