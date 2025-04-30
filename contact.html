@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ページ準備中 | ホームページ制作のご提案</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <div class="header-container">
+        <div class="header-content">
+            <div class="logo"><a href="index.html">LOGO</a></div>
+            <div class="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="contact-info">
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#concept-scroll">CONCEPT<br><span>コンセプト</span></a></li>
+                        <li><a href="#service-scroll">SERVICE<br><span>事業内容</span></a></li>
+                        <li><a href="#works-scroll">WORKS<br><span>制作実績</span></a></li>
+                        <li><a href="#ex-design">EX DESIGN<br><span>デザイン事例</span></a></li>
+                        <li><a href="#blog-scroll">BLOG<br><span>ブログ</span></a></li>
+                    </ul>
+                </nav>
+                <div class="phone">
+                    <i class="fas fa-phone"></i>
+                    <div class="phone__text">
+                        <p>03-1234-5678</p>
+                        <p class="working-hours">平日10：00〜18：00</p>
+                    </div>
+                </div>
+                <a href="#" class="header-btn">
+                    <i class="fas fa-envelope"></i>
+                    お問い合わせ
+                </a>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#">CONCEPT<br><span>コンセプト</span></a></li>
+                    <li><a href="#">SERVICE<br><span>事業内容</span></a></li>
+                    <li><a href="#">WORKS<br><span>制作実績</span></a></li>
+                    <li><a href="#">EX DESIGN<br><span>デザイン事例</span></a></li>
+                    <li><a href="#">BLOG<br><span>ブログ</span></a></li>
+                </ul>
+                <div class="mobile-contact-info">
+                    <div class="mobile-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>03-1234-5678</span>
+                        <span class="working-hours">平日10：00〜18：00</span>
+                    </div>
+                    <a href="#" class="contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        お問い合わせ
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Page Under Construction Section -->
+<section class="page-under-construction">
+    <div class="container">
+        <h1>現在ページを作成中です</h1>
+        <p>お待ちいただき、ありがとうございます。このページは現在準備中です。<br>近日中に公開予定ですので、しばらくお待ちください。</p>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            ホームページに戻る
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo"><a href="index.html">LOGO</a></div>
+            <div class="footer-links">
+                <a href="#">〒123-456　東京都架空区架空1-1-1　KAKUビル2F</a>
+            </div>
+        </div>
+        <div class="footer-mobile">
+            <div class="footer-nav">
+                <a href="#">〒123-456　東京都架空区架空1-1-1　KAKUビル2F</a>
+            </div>
+            <div class="footer-contact">
+                <p>お問い合わせ</p>
+                <p><i class="fas fa-phone"></i> 03-1234-5678</p>
+                <p class="working-hours">平日10：00〜18：00</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Company Name. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileNav.classList.toggle('nav-open');
+            document.body.classList.toggle('nav-active');
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    });
+</script>
+</body>
+</html>
